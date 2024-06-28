@@ -1,0 +1,15 @@
+server:
+  port: 9261
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/course_manager?useUnicode=true&characterEncoding=utf-8&userSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: root
+    password: virus135
+  jackson:
+    time-zone: Asia/Shanghai
+
+mybatis-plus:
+  mapper-locations: classpath:mapping/*.xml
+  type-aliases-package: com.rabbiter.cm.model
